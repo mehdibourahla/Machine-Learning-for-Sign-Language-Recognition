@@ -1,0 +1,511 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background: #224941 ;
+    overflow: hidden;
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+#sentence{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(51, 51, 51, 0.692);
+    color: #fff;
+    padding: 10px;
+    border-radius: 0.5em;
+}
+.sentence{
+    display: flex;
+    justify-content: center;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 300px;
+  width: 300px;
+  top: 100px;
+  position: relative;
+  transform: scale(1);
+}
+.container-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    top: 700px;
+    left: 20px;
+    position: relative;
+    transform: scale(1);
+  }
+.circle {
+  background-color: #e2e7ec;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+#form{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+#form > input{
+    color: #e2e7ec;
+    background-color: #224941;
+    border: none;
+    border-bottom: 3px solid #55b7a4 ;
+    width: 300px;
+    font-size: 36px;
+}
+#form > input:focus{
+    outline: none;
+}
+#sign > button > img{
+    max-width: 150px;
+}
+#sign > button{
+    border: 0;
+    background-color: #e2e7ec;
+}
+#sign > button:focus{
+    outline: none;
+}
+#sign-page > form > input{
+    max-width: 70px;
+}
+#sign-page > form > input:focus{
+    outline: none;
+}
+.gradient-circle-page {
+  background: conic-gradient(
+    #55b7a4 0%,
+    #4ca493 40%,
+    #fff 40%,
+    #fff 60%,
+    #336d62 60%,
+    #2a5b52 100%
+  );
+  height: 120px;
+  width: 120px;
+  z-index: -2;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+.gradient-circle {
+    background: conic-gradient(
+      #55b7a4 0%,
+      #4ca493 40%,
+      #fff 40%,
+      #fff 60%,
+      #336d62 60%,
+      #2a5b52 100%
+    );
+    height: 320px;
+    width: 320px;
+    z-index: -2;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+  }
+.pointer {
+  background-color: #fff;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: block;
+}
+.pointer-container {
+  position: absolute;
+  top: -40px;
+  left: 140px;
+  width: 20px;
+  height: 190px;
+  animation: rotate 7.5s linear forwards infinite;
+  transform-origin: bottom center;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#bathroom{
+    background-image: url("bathroom.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%; 
+}
+#bathroom > .washer {
+    background-image:url("washer.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 940px;
+    top: 490px;
+    width: 200px;
+    height: 200px;
+}
+#bathroom > .washeron{
+    background-image:url("washer.gif"); 
+}
+#bathroom > .water {
+    position: absolute;
+    left: 322px;
+    top: 415px;
+    width: 15px;
+    height: 90px;
+}
+#bathroom > .wateron{
+    background-image:url("water.gif"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#bathroom > .toggler{
+    background-image: url("toggler.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 270px;
+    top: 52px;
+    width: 350px;
+    height: 300px;
+}
+#bathroom > .toggleron{
+    background-image: url("toggleron.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 270px;
+    top: 52px;
+    width: 350px;
+    height: 300px;
+}
+#kitchen{
+    background-image: url("kitchen.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%; 
+}
+#kitchen > .toggler{
+    background-image: url("toggler.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 58px;
+    top: 78px;
+    width: 280px;
+    height: 300px;
+}
+#kitchen > .toggleron{
+    background-image: url("toggleron.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 58px;
+    top: 78px;
+    width: 280px;
+    height: 300px;
+}
+#kitchen > .backFridge
+{
+    background-image:url("backfridge.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute;
+    width:200px;
+    height:550px;
+    top:200px;
+    left:1300px;
+}
+#kitchen > .backFridge > .fridge
+{
+    background-image:url("closedFridge.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+    top:3px;
+    left:2px;
+    width:200px;
+    height:550px;
+    transform-origin: right;
+    transition: all 0.5s ease-in-out;
+}
+#kitchen > .backFridge > .fridgeOpen
+{
+    transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(120deg);
+}
+#kitchen > .radio {
+    background-image:url("radio.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 200px;
+    top: 240px;
+    width: 150px;
+    height: 150px;
+}
+#kitchen > .radioon{
+    background-image:url("radio.gif"); 
+}
+#home{
+    background-image: url("home.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%; 
+}
+#home > .screen{
+    position: absolute;
+    left: 159px;
+    top: 307px;
+    width: 297px;
+    height: 155px;
+}
+#home > .tvon{
+    background-image: url("tv.gif");
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+#home > .ac{
+    background-image:url("ac.png");
+    background-size: cover;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    width: 400px;
+    height: 300px;
+}
+#home > .acon{
+    background-image:url("acon.gif"); 
+}
+#garage{
+    background-image: url("garage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%;
+}
+#garage > .backDoor
+{
+    background-image:url("garageBackdoor.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute;
+    width:160px;
+    height:378px;
+    top:319px;
+    left:566px;
+}
+#garage > .backDoor >.door
+{
+    background-image:url("garageDoor.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute;
+    width:175px;
+    height:380px;
+    top:-2px;
+    left:-4px;
+ 
+  transform-origin: left;
+  /*Speed of the Door animation*/
+  transition: all 0.5s ease-in-out;
+}
+#garage > .radio {
+    background-image:url("radio.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 900px;
+    top: 700px;
+    width: 150px;
+    height: 150px;
+}
+#garage > .radioon{
+    background-image:url("radio.gif"); 
+}
+
+#garage > .fan {
+    background-image:url("fan.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 1200px;
+    top: 390px;
+    width: 200px;
+    height: 200px;
+}
+#garage > .fanon{
+    background-image:url("fanon.gif"); 
+}
+
+#room{
+    background-image: url("room.jpg");
+    background-size: cover;
+    min-height: 100%;
+}
+#room > .backDoor
+{
+  background-color: #333;
+  position:absolute;
+  width:255px;
+  height:505px;
+  top:154px;
+  left:890px;
+}
+#room > .backDoor > .door
+{
+  background-image:url("door.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:absolute;
+  width:255px;
+  height:505px;
+ 
+  transform-origin: left;
+  /*Speed of the Door animation*/
+  transition: all 0.5s ease-in-out;
+}
+
+.doorOpen
+{
+  /*prespectiv creates the door open effect*/
+  transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
+}
+
+#room > .ac{
+    background-image:url("ac.png");
+    background-size: cover;
+    position: absolute;
+    left: 175px;
+    top: 50px;
+    width: 300px;
+    height: 200px;
+}
+#room > .acon{
+    background-image:url("acon.gif"); 
+}
+#room > .fan {
+    background-image:url("fan.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 1250px;
+    top: 500px;
+    width: 200px;
+    height: 200px;
+}
+#room > .fanon{
+    background-image:url("fanon.gif"); 
+}
+#room > .tv{
+    background-image: url("tv.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 150px;
+    top: 300px;
+    width: 500px;
+    height: 400px;
+}
+#room > .screen{
+    position: relative;
+    left: 155px;
+    top: 109px;
+    width: 192px;
+    height: 115px;
+}
+#room > .tvon{
+    background-image: url("tv.gif");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    position: relative;
+    left: 155px;
+    top: 109px;
+    width: 192px;
+    height: 115px; 
+}
+#room > .desktop{
+    background-image: url("computer.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 200px;
+    transform: scaleY(1.2);
+    top: 320px;
+    width: 400px;
+    height: 360px;
+}
+#room > .desktop > .pc{
+    position: relative;
+    left: 138px;
+    top: 94px;
+    width: 124px;
+    height: 68px;
+}
+#room >.desktop > .pcon{
+    background-image: url("windowsxp.gif");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    position: relative;
+    left: 138px;
+    top: 94px;
+    width: 124px;
+    height: 68px;
+}
+#room > .window{
+    background-image: url("window.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 275px;
+    top: 190px;
+    width: 250px;
+    height: 200px;
+}
+#room > .window > .toggler{
+    background-image: url("toggler.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 0px;
+    top: -10px;
+    width: 255px;
+    height: 200px;
+}
+#room > .window >  .toggleron{
+    background-image: url("toggleron.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 0px;
+    top: -10px;
+    width: 255px;
+    height: 200px;
+}
+#room > .radio {
+    background-image:url("radio.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 600px;
+    top: 500px;
+    width: 200px;
+    height: 200px;
+}
+#room > .radioon{
+    background-image:url("radio.gif"); 
+}
