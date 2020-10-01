@@ -15,10 +15,10 @@ np.load = lambda *a,**k: np_load_old(*a, allow_pickle=True, **k)
 encoder = LabelEncoder()
 
 # Import files
-csi = loadmat('csi.mat')['test']
-labels = pd.read_csv("labels.csv", header = None).iloc[:,0]
-words = pd.read_csv("sign_labels.csv", header = None).iloc[:,0].tolist()
-encoder.classes_ = np.load('classes.npy')
+csi = loadmat('files/csi.mat')['test']
+labels = pd.read_csv("files/labels.csv", header = None).iloc[:,0]
+words = pd.read_csv("files/sign_labels.csv", header = None).iloc[:,0].tolist()
+encoder.classes_ = np.load('files/classes.npy')
 
 @app.route('/',methods = ['POST','GET'])
 def index():
