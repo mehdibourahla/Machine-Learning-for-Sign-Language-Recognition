@@ -1,4 +1,3 @@
-# docker run -p 8501:8501 --mount type=bind,source=D:/Objets/Workspaces/PFE/Models/cnn,target=/models/model -e MODEL_NAME=model -t tensorflow/serving
 from flask import Flask, render_template, url_for, request
 import requests
 import numpy as np
